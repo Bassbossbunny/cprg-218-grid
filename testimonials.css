@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, ariel, helvetica, sans-serif;
+    }
+
+body {
+    background-color: rgb(249, 245, 240);
+}
+
+body h1{
+/*try and get to centre of page*/
+text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+main section {
+    border: 3px solid #0e4749;
+    border-radius: 1rem;
+    background-color: #95c623;
+    padding: 0.8rem;
+}
+
+main section h2{
+    margin: 0;
+}
+main section.grid-col-span-2 {
+    background-color: #e55812;
+    color: #fff;
+    grid-column: span 2;
+}
+
+main section.grid-row-span-2{
+    background-color: #0e4749;
+    color: #fff;
+    grid-row: span 2;
+}
+
+blockquote {
+margin: 0;
+}
